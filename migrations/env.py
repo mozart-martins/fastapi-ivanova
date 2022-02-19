@@ -26,6 +26,9 @@ target_metadata = metadata
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
 
+import config as ems_config
+config.set_main_option('sqlalchemy.url', ems_config.config.get('sql', 'database'))
+
 
 def run_migrations_offline():
     """Run migrations in 'offline' mode.
