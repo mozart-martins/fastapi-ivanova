@@ -46,7 +46,7 @@ Ou tudo em uma linha:
 
 # Configurando o Alembic
 
-No arquivo alembic.ini devemos colocar a correta string de conexão na variável sqlalchemy.url. **EXISTE UMA FORMA DE NÃO DEIXAR A STRING EXPLÍCITA NO ARQUIVO**.
+No arquivo alembic.ini devemos colocar a correta string de conexão na variável sqlalchemy.url. **EXISTE UMA FORMA DE NÃO DEIXAR A STRING EXPLÍCITA NO ARQUIVO (OLHAR O ENV.PY PARA VER COMO FAZER)**.
 
 Já no arquivo env.py, deve-se importar o metadata (from main import metadata) do main.py ou de onde estiver configurado (metadata = sqlalchemy.MetaData()) e inserir na variável target_metadata, ficando target_metadata = metadata.
 
